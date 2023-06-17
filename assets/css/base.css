@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6,
+p, 
+ul, ol, 
+dl, dd, dt,
+figure, 
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-weight: unset;
+}
+
+ul, ol {
+    list-style: none;
+}
+img, 
+iframe, 
+input, 
+textarea, 
+button {
+  border: none;
+}
+
+:root{
+    --yl-primary: #FFE976;
+    --yl-secondary: #faea98;
+    --wt-primary:#FFFEFB;
+    --wt-secondary:#fff;
+    --tx-primary: #510000;
+    --tx-secondary:#524F4F;
+}
+
+@font-face {
+  font-family: 'Acme-Regular';
+  src: url('../fonts/Acme-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BS-Regular';
+  src:  url('../fonts/BS-Regular.ttf') format('truetype'), local('Open Sans');
+}
+
+.lp-container{
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+}
