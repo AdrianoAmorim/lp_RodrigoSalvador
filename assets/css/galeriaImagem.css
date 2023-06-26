@@ -2,8 +2,6 @@
     position: relative;
     display: flex;
     width: 100%;
-    margin-top: 90px;
-    margin-bottom: 30px;
     justify-content: center;
     background-color: #f1ae2b;
 }
@@ -41,6 +39,8 @@
     height: 165px;
     object-fit: cover;
     object-position: center;
+    padding: 4px;
+    background-color: #fff;
 }
 
 .box-galeriaImagens .lp-galeriaImagem .splide__pagination{
