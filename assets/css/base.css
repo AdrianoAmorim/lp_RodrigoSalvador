@@ -54,7 +54,7 @@ button {
   font-family: 'Acme-Regular';
   font-weight: 500;
   font-size: 42px;
-  color: var(--tx-secondary);
-  text-shadow: 2px 1px 2px var(--tx-secondary);
+  color: #4a2512;
+  text-shadow: 1px 1px 2px var(--tx-secondary);
   margin-bottom: 30px;
 }

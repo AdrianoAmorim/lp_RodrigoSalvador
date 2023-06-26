@@ -1,5 +1,14 @@
+/*estilos para header no scroll*/
+.header-fixo{
+    background-color: #4a2512;
+}
+.corTexto-HeaderFixo{
+    color: #72bca5 !important;
+}
+
 .lp-headerPrincipal{
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     display: flex;
@@ -7,6 +16,7 @@
     justify-content: center;
     width: 100%;
     padding: 15px 0;
+    transition: all .2s ease;
 }
 .lp-headerPrincipal .lp-container{
     align-items: center;
@@ -27,7 +37,7 @@
     font-size: 22px;
     color: #4a2512;
     font-weight: 500;
-    transition: color .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .lp-headerPrincipal .menu-header > ul > li > a:hover{
     color: #72bca5;
@@ -71,8 +81,8 @@
 
 }
 .logoPage img{
-   width: 80px;
-   height: 80px;
+   width: 60px;
+   height: 60px;
 }
 .logoPage span{
     font-family: 'BS-Regular';
@@ -81,6 +91,7 @@
 }
 .logoPage span:nth-child(1){
     color: #4a2512;
+    transition: color .2s ease;
 }
 .logoPage span:nth-child(2){
     color: var(--tx-secondary);
