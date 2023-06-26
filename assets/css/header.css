@@ -1,10 +1,15 @@
 .lp-headerPrincipal{
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80px;
-    border-bottom: 2px solid var(--tx-secondary);
+    padding: 15px 0;
+}
+.lp-headerPrincipal .lp-container{
+    align-items: center;
 }
 .lp-headerPrincipal .menu-header{
     width: 100%;
@@ -20,48 +25,63 @@
     text-decoration: none;
     font-family: 'Acme-Regular';
     font-size: 22px;
-    color: var(--tx-primary);
+    color: #4a2512;
     font-weight: 500;
+    transition: color .2s ease-in-out;
 }
-
-.lp-blockTitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 20px 0;
+.lp-headerPrincipal .menu-header > ul > li > a:hover{
+    color: #72bca5;
 }
-.lp-blockTitle .boxBlockTitle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+.title-imgAgenda a svg{
+    width: 50px;
+    height: 50px;
 }
-.lp-blockTitle .boxBlockTitle .title-imgAgenda a svg{
-    width: 70px;
-    height: 70px;
-}
-.lp-blockTitle .boxBlockTitle .title-imgAgenda a{
+.title-imgAgenda a{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
-.lp-blockTitle .boxBlockTitle .title-imgAgenda a:visited{
+.title-imgAgenda a:visited{
     color: var(--tx-primary);
 }
-.lp-blockTitle .boxBlockTitle .title-imgAgenda a span{
-    color: var(--tx-primary);
+.title-imgAgenda a:hover span{
+    color: #72bca5;
+}
+.title-imgAgenda a span{
+    color: var(--tx-secondary);
     font-family: 'Acme-Regular';
     font-weight: 500;
     font-size: 16px;
+    transition: color .2s ease-in-out;
+    
 }
-.lp-blockTitle .boxBlockTitle .titlePage span{
+/*LOGO HEADER*/
+ .logoPage{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logoPage .text-logoPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+
+}
+.logoPage img{
+   width: 80px;
+   height: 80px;
+}
+.logoPage span{
     font-family: 'BS-Regular';
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 400;
 }
-.lp-blockTitle .boxBlockTitle .titlePage span:nth-child(1){
+.logoPage span:nth-child(1){
+    color: #4a2512;
+}
+.logoPage span:nth-child(2){
     color: var(--tx-secondary);
 }

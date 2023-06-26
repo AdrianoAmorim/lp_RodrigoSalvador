@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/splide.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/galeriaImagem.css">
     <title>Rodrigo Salvador</title>
 </head>
 
@@ -14,6 +16,13 @@
 
     <header class="lp-headerPrincipal">
         <div class="lp-container">
+            <div class="logoPage">
+                <img src="./assets/img/logo2.png" alt="Logo Rodrigo Salvador">
+                <div class="text-logoPage">
+                    <span>Rodrigo</span>
+                    <span>Salvador</span>
+                </div>
+            </div>
             <nav class="menu-header">
                 <ul>
                     <li>
@@ -22,34 +31,28 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#galeria">
                             GALERIA
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            SOBRE
+                            BIOGRAFIA
                         </a>
                     </li>
                     <li>
-                        <a href="#"> 
+                        <a href="#">
                             CONTATO
                         </a>
                     </li>
                 </ul>
             </nav>
-        </div>
-    </header>
 
-    <div class="lp-blockTitle">
-        <div class="lp-container boxBlockTitle">
-            <div class="titlePage">
-                <span>Rodrigo</span>
-                <span>Salvador</span>
-            </div>
+
             <div class="title-imgAgenda">
                 <a href="#">
-                    <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                    <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        fill="#ffffff">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -72,10 +75,52 @@
                     <span>AGENDA</span>
                 </a>
             </div>
+
         </div>
-    </div>
+    </header>
+
+    <main class="lp-main">
+        <section class="box-blocoPrincipal">
+            <div class="bg-imgPrincipal"></div>
+            <div class="lp-container blocoPrincipal">
+                <div class="imgBlocoPrincipal">
+                    <img src="./assets/img/teste.png" alt="Imagem Rodrigo Salvador">
+                </div>
+                <div class="soUmCafezinho">
+                    <div class="logoCafezinho">
+                        <h2>Só um Cafezinho</h2>
+                        <img src="./assets/img/imgCafezinho.svg" alt="logo Cafezinho">
+                    </div>
+                    <div class="lp-videoYT">
+                        <iframe width="380" height="260" src="https://www.youtube.com/embed/5y9bOMcOJfQ"
+                            title="EV. RODRIGO SALVADOR |&quot;FICA QUE DEUS FICA&quot;" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box-galeriaImagens" id="#galeria">
+            <div class="lp-container lp-galeriaImagem">
+                <h3 class="titleBloco">Galeria - Imagens</h3>
 
 
+
+                <div id="splide-galeriaImg" class="splide" aria-label="Galeria de Imagens">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">Slide 01</li>
+                            <li class="splide__slide">Slide 02</li>
+                            <li class="splide__slide">Slide 03</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./assets/js/splide.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

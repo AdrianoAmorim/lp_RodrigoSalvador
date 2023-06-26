@@ -31,7 +31,7 @@ button {
     --wt-primary:#FFFEFB;
     --wt-secondary:#fff;
     --tx-primary: #510000;
-    --tx-secondary:#524F4F;
+    --tx-secondary:#2a2a2a;
 }
 
 @font-face {
@@ -47,4 +47,14 @@ button {
   display: flex;
   width: 100%;
   max-width: 1000px;
+}
+
+
+.titleBloco{
+  font-family: 'Acme-Regular';
+  font-weight: 500;
+  font-size: 42px;
+  color: var(--tx-secondary);
+  text-shadow: 2px 1px 2px var(--tx-secondary);
+  margin-bottom: 30px;
 }
