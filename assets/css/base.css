@@ -58,3 +58,34 @@ button {
   text-shadow: 1px 1px 2px var(--tx-secondary);
   margin-bottom: 30px;
 }
+.show{
+  display: flex !important;
+}
+
+.fadeInMenu{
+  animation: fadeInMenu .2s ease-out forwards;
+}
+.fadeOutMenu{
+  animation: fadeOutMenu .2s ease-out forwards;
+}
+
+@keyframes fadeInMenu {
+  from{
+    transform: translateX(242px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeOutMenu {
+  from{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to{
+    transform: translateX(242px);
+    opacity: 0;
+  }
+}

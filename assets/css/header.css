@@ -1,6 +1,6 @@
 /*estilos para header no scroll*/
 .header-fixo{
-    background-color: #4a2512;
+    background-color: #4a2512 !important;
 }
 .corTexto-HeaderFixo{
     color: #72bca5 !important;
@@ -18,8 +18,25 @@
     padding: 15px 0;
     transition: all .2s ease;
 }
-.lp-headerPrincipal .lp-container{
+.lp-headerPrincipal .box-btnMenuMob{
+    display: none;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.lp-headerPrincipal .box-btnMenuMob .lineBtnMob{
+    border: 2.3px solid #4a2512;
+    width: 100%;
+}
+
+.lp-headerPrincipal > .lp-container{
+    align-items: center;
+    margin: 0 20px;
 }
 .lp-headerPrincipal .menu-header{
     width: 100%;
@@ -41,6 +58,10 @@
 }
 .lp-headerPrincipal .menu-header > ul > li > a:hover{
     color: #72bca5;
+}
+.title-imgAgenda{
+    display: flex;
+    align-items: center;
 }
 .title-imgAgenda a svg{
     width: 50px;
