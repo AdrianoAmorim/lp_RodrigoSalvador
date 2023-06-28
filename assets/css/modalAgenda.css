@@ -1,0 +1,104 @@
+.lp-BoxModalAgenda{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    height: 100%;
+    background-color: #000000bb;
+}
+.lp-BoxModalAgenda .lp-modalAgenda{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.lp-BoxModalAgenda .lp-modalAgenda header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: #72bca5;
+    padding: 10px;
+}
+.lp-BoxModalAgenda .lp-modalAgenda header h3{
+    font-family: "Acme-Regular";
+    font-size: 26px;
+    color: #f5f5f5;
+
+}
+.lp-BoxModalAgenda .lp-modalAgenda header span{
+    font-family: "Acme-Regular";
+    font-size: 22px;
+    color: #4a2512;
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+.lp-BoxModalAgenda .lp-modalAgenda header span:hover,
+.lp-BoxModalAgenda .lp-modalAgenda header span:focus{
+    color: #f5f5f5;
+}
+
+.lp-BoxModalAgenda .lp-modalAgenda .contentModal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 15px;
+}
+.lp-BoxModalAgenda .lp-modalAgenda .contentModal .boxDiaAgenda{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #79544299;
+    padding: 5px 0;
+}
+
+.lp-BoxModalAgenda .lp-modalAgenda .contentModal .boxDiaAgenda span{
+    font-family: "Acme-Regular";
+    font-size: 18px;
+}
+.lp-BoxModalAgenda .lp-modalAgenda .contentModal .boxDiaAgenda span:nth-child(1){
+    color: #72bca5;
+    margin-right: 5px;
+}
+.lp-BoxModalAgenda .lp-modalAgenda .contentModal .boxDiaAgenda span:nth-child(2){
+    color: #1a0c06;
+}
+
+.openModal{
+    animation: openModal .8s forwards;
+}
+.closeModal{
+    animation: closeModal .8s forwards;
+}
+
+@keyframes closeModal {
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+}
+@keyframes openModal {
+    from{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

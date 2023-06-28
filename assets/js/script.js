@@ -1,4 +1,9 @@
 const btnMenuMob = document.querySelector('.box-btnMenuMob');
+const btnAgenda = document.getElementById('btnAgenda');
+const modalAgenda = document.querySelector('.lp-BoxModalAgenda');
+const btnCloseModal = document.getElementById('closeModal');
+const bodyPage = document.querySelector('body');
+const boxModalAgenda = document.querySelector('.lp-modalAgenda');
 
 //CONFIGURAÇÃO DO SPLIDER IMAGEM
 var splideGaleria = new Splide( '#splide-galeriaImg', {
@@ -114,5 +119,20 @@ window.addEventListener('resize',()=>{
     menu.classList.remove('show');
     menu.classList.remove('fadeOutMenu');
   }
+})
+
+//ABRIR MODAL DE AGENDA
+btnAgenda.addEventListener('click',()=>{
+  boxModalAgenda.classList.remove('closeModal');
+  modalAgenda.style.display = 'flex';
+  bodyPage.style.overflowY = 'hidden';
+})
+//FECHAR MODAL DE AGENDA
+btnCloseModal.addEventListener('click',()=>{
+  boxModalAgenda.classList.toggle('closeModal');
+  setTimeout(() => {
+  modalAgenda.removeAttribute('style');
+  bodyPage.style.overflowY = 'auto';
+  }, 800);
 })
 
