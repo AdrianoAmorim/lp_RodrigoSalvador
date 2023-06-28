@@ -59,7 +59,7 @@
     }
 
     .lp-main .box-blocoPrincipal .blocoPrincipal .logoCafezinho .text-cafezinho {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
 
@@ -98,7 +98,7 @@
 
     .lp-main .box-blocoPrincipal .blocoPrincipal .soUmCafezinho .logoCafezinho img {
         padding: 10px;
-        max-width: 136px;
+        max-width: 190px;
         border-color: #72bca5;
     }
 
@@ -174,9 +174,13 @@
         width: 240px;
         height: 240px;
     }
+    .lp-main .box-blocoPrincipal .blocoPrincipal .soUmCafezinho .logoCafezinho img{
+        max-width: 125px;
+    }
 
     .lp-main .box-blocoPrincipal .blocoPrincipal .logoCafezinho .text-cafezinho {
-        font-size: 22px;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .lp-main .box-biografia .lp-biografia header>.title-headerBiografia span {

@@ -62,12 +62,12 @@ body {
     align-items: center;
     z-index: 1;
     width: 100%;
-    max-width: 450px;
+    max-width: 431px;
 }
 
 .lp-main .box-blocoPrincipal .blocoPrincipal .soUmCafezinho .logoCafezinho img {
     width: 100%;
-    max-width: 140px;
+    max-width: 185px;
     margin-right: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -78,7 +78,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Acme-Regular";
-    font-size: 32px;
+    font-size: 28px;
     color: #4a2512;
     line-height: 30px;
 }

@@ -1,4 +1,6 @@
 const btnMenuMob = document.querySelector('.box-btnMenuMob');
+
+//CONFIGURAÇÃO DO SPLIDER IMAGEM
 var splideGaleria = new Splide( '#splide-galeriaImg', {
     type   : 'slide',
     perPage: 4,
@@ -10,13 +12,14 @@ var splideGaleria = new Splide( '#splide-galeriaImg', {
         fixedWidth:'32.4%'
       },
       590:{
-        fixedWidth:'48.8%'
+        fixedWidth:'48.8%',
+        arrows: false
       }
     }
   } );
 
 
-
+//ADICIONA O EFEITO DE TROCAR AS CORES DO HEADER AO ROLA O SCROLL
   window.addEventListener('scroll', function() {
     var header = document.querySelector('.lp-headerPrincipal');
     var textoLogo = document.querySelector('.text-logoPage span:nth-child(1)');
@@ -70,13 +73,12 @@ var splideGaleria = new Splide( '#splide-galeriaImg', {
     }
   });
 
-
-
-
+  //INICIA O SPLIDE QUANDO TODOS ELEMENTOS DO DOM ESTIVEREM CARREGADO
   window.addEventListener('DOMContentLoaded',()=>{
     splideGaleria.mount()
   })
 
+//EVENTO DE CLIQUE NO BOTAO DE MENU DO MOBILE
 btnMenuMob.addEventListener('click',()=>{
   var menu = document.querySelector('.menu-header');
   if(menu.classList.contains('show')){
@@ -90,6 +92,7 @@ btnMenuMob.addEventListener('click',()=>{
   }
 })
 
+//RESETA O HEADER AO VOLTAR PARA O TAMANHO DESKTOP
 window.addEventListener('resize',()=>{
   var menu = document.querySelector('.menu-header');
   if(window.innerWidth >980){
@@ -97,3 +100,4 @@ window.addEventListener('resize',()=>{
     menu.classList.remove('fadeOutMenu');
   }
 })
+
