@@ -13,7 +13,7 @@
     <title>Rodrigo Salvador</title>
 </head>
 
-<body>
+<body id="home">
 
     <header class="lp-headerPrincipal">
         <div class="lp-container">
@@ -29,22 +29,22 @@
             <nav class="menu-header fadeInMenu">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="scrollSmoothlyTo(event,'#home',150)">
                             HOME
                         </a>
                     </li>
                     <li>
-                        <a href="#galeria">
+                        <a href="#" onclick="scrollSmoothlyTo(event,'#galeria',100)">
                             GALERIA
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="scrollSmoothlyTo(event,'#biografia',100)">
                             BIOGRAFIA
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="scrollSmoothlyTo(event,'#contato',100)">
                             CONTATO
                         </a>
                     </li>
@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <section class="box-galeriaImagens" id="#galeria">
+        <section class="box-galeriaImagens" id="galeria">
             <div class="lp-container lp-galeriaImagem">
                 <h3 class="titleBloco">Ministrações -Imagens</h3>
                 <div id="splide-galeriaImg" class="splide" aria-label="Galeria de Imagens">
@@ -180,7 +180,7 @@
                 </div>
             </div>
         </section>
-        <section class="box-biografia">
+        <section class="box-biografia" id="biografia">
             <div class="lp-container lp-biografia">
                 <header>
                     <div class="img-headerBiografia">
@@ -231,7 +231,7 @@
             </div>
         </section>
 
-        <section class="box-redeSocial">
+        <section class="box-redeSocial" id="contato">
             <div class="lp-container lp-redeSocial">
                 <span>Redes Sociais</span>
                 <div class="lp-iconesRS">

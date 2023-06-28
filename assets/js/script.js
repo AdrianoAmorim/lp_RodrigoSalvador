@@ -92,6 +92,21 @@ btnMenuMob.addEventListener('click',()=>{
   }
 })
 
+//FUNÇÃO PARA CRIAR UM SCROLL SUAVE
+const scrollSmoothlyTo = (event,targetSelector, offsetY) =>{
+  var target = document.querySelector(targetSelector);
+  event.preventDefault();
+  
+  if (target) {
+    var offsetTop = target.getBoundingClientRect().top + window.scrollY;
+    var adjustedOffsetTop = offsetTop - offsetY;
+    
+    window.scrollTo({
+      top: adjustedOffsetTop,
+      behavior: 'smooth'
+    });
+  }
+}
 //RESETA O HEADER AO VOLTAR PARA O TAMANHO DESKTOP
 window.addEventListener('resize',()=>{
   var menu = document.querySelector('.menu-header');
