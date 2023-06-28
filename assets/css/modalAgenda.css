@@ -54,6 +54,8 @@
     flex-direction: column;
     width: 100%;
     padding: 20px 15px;
+    overflow-y: auto;
+    height: 280px;
 }
 .lp-BoxModalAgenda .lp-modalAgenda .contentModal .boxDiaAgenda{
     display: flex;
@@ -79,7 +81,7 @@
     animation: openModal .8s forwards;
 }
 .closeModal{
-    animation: closeModal .8s forwards;
+    animation: closeModal .5s forwards;
 }
 
 @keyframes closeModal {

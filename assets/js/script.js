@@ -138,6 +138,6 @@ btnCloseModal.addEventListener('click',()=>{
   setTimeout(() => {
   modalAgenda.removeAttribute('style');
   bodyPage.style.overflowY = 'auto';
-  }, 800);
+  }, 600);
 })
 
