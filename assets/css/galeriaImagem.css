@@ -23,9 +23,6 @@
     height: 100%;
     width: 100%;
 }
-.box-galeriaImagens .lp-galeriaImagem #splide-galeriaImg .splide__list{
-    
-}
 .box-galeriaImagens .lp-galeriaImagem #splide-galeriaImg .splide__list li{
     display: flex;
     flex-direction: column;
