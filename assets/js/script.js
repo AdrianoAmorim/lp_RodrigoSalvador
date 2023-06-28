@@ -23,7 +23,18 @@ var splideGaleria = new Splide( '#splide-galeriaImg', {
     }
   } );
 
-
+const openMenuMobile = ()=>{
+  var menu = document.querySelector('.menu-header');
+  if(menu.classList.contains('show')){
+    menu.classList.add('fadeOutMenu');
+    setTimeout(() => {
+      menu.classList.remove('show');
+    }, 300);
+  }else{
+    menu.classList.remove('fadeOutMenu');
+    menu.classList.add('show'); 
+  }
+}
 //ADICIONA O EFEITO DE TROCAR AS CORES DO HEADER AO ROLA O SCROLL
   window.addEventListener('scroll', function() {
     var header = document.querySelector('.lp-headerPrincipal');
@@ -85,16 +96,7 @@ var splideGaleria = new Splide( '#splide-galeriaImg', {
 
 //EVENTO DE CLIQUE NO BOTAO DE MENU DO MOBILE
 btnMenuMob.addEventListener('click',()=>{
-  var menu = document.querySelector('.menu-header');
-  if(menu.classList.contains('show')){
-    menu.classList.add('fadeOutMenu');
-    setTimeout(() => {
-      menu.classList.remove('show');
-    }, 300);
-  }else{
-    menu.classList.remove('fadeOutMenu');
-    menu.classList.add('show'); 
-  }
+  openMenuMobile();
 })
 
 //FUNÇÃO PARA CRIAR UM SCROLL SUAVE
@@ -110,6 +112,9 @@ const scrollSmoothlyTo = (event,targetSelector, offsetY) =>{
       top: adjustedOffsetTop,
       behavior: 'smooth'
     });
+  }
+  if(window.innerWidth <980){
+    openMenuMobile();
   }
 }
 //RESETA O HEADER AO VOLTAR PARA O TAMANHO DESKTOP
