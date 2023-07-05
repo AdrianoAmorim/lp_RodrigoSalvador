@@ -64,6 +64,9 @@
 }
 
 @media (max-width:770px) {
+    .lp-main {
+        margin-top: 105px;
+    }
     .lp-main .box-biografia .lp-biografia .imgs-biografia {
         flex-direction: column;
     }
@@ -89,6 +92,7 @@
         background-color: #f5f5f5;
         border-radius: 25px 25px 0 0;
         z-index: 1;
+        margin-top: -10px;
     }
 
     .lp-main .box-blocoPrincipal .blocoPrincipal .soUmCafezinho .logoCafezinho {

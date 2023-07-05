@@ -67,6 +67,9 @@ button {
 .fadeOutMenu{
   animation: fadeOutMenu .2s ease-out forwards;
 }
+.inFotoPrincipal{
+  animation: inFotoPrincipal 1s ease-in-out forwards;
+}
 
 @keyframes fadeInMenu {
   from{
@@ -86,5 +89,15 @@ button {
   to{
     transform: translateX(242px);
     opacity: 0;
+  }
+}
+@keyframes inFotoPrincipal {
+  from{
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
