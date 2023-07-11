@@ -58,6 +58,16 @@
     overflow-y: auto;
     height: 280px;
 }
+.lp-BoxModalAgenda .lp-modalAgenda .contentModal::-webkit-scrollbar-track{
+    background-color: #e2f7ef;
+}
+.lp-BoxModalAgenda .lp-modalAgenda .contentModal::-webkit-scrollbar{
+    width: 10px;
+}
+.lp-BoxModalAgenda .lp-modalAgenda .contentModal::-webkit-scrollbar-thumb{
+    background-color: #72bca5;
+    border-radius: 8px;
+}
 .lp-BoxModalAgenda .lp-modalAgenda .contentModal .boxDiaAgenda{
     display: flex;
     align-items: center;
